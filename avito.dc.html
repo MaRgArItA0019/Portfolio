@@ -300,7 +300,7 @@
 </div>
 
 </x-dc>
-<script type="text/x-dc" data-dc-script data-props="{&quot;homeUrl&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;Главная.dc.html&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Ссылки&quot;},&quot;tgUrl&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;https://t.me/mn_denisova&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Ссылки&quot;},&quot;cvUrl&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;cv.pdf&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Ссылки&quot;},&quot;caseGosuslugi&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;Госуслуги.dc.html&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Другие кейсы&quot;},&quot;caseMoex&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;MOEX.dc.html&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Другие кейсы&quot;}}">
+<script type="text/x-dc" data-dc-script data-props="{&quot;homeUrl&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;Главная.dc.html&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Ссылки&quot;},&quot;tgUrl&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;https://t.me/mn_denisova&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Ссылки&quot;},&quot;cvUrl&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;cv.pdf&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Ссылки&quot;},&quot;caseGosuslugi&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;gosuslugi.dc.html&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Другие кейсы&quot;},&quot;caseMoex&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;MOEX.dc.html&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Другие кейсы&quot;}}">
 class Component extends DCLogic {
   state = { menuOpen: false };
   _tipRef = React.createRef();
@@ -400,7 +400,7 @@ class Component extends DCLogic {
       homeUrl: p.homeUrl ?? "Главная.dc.html",
       tgUrl: p.tgUrl ?? "https://t.me/mn_denisova",
       cvUrl: p.cvUrl ?? "cv.pdf",
-      caseYandex: p.caseYandex ?? "Яндекс.dc.html",
+      caseYandex: p.caseYandex ?? "yandex.dc.html",
       caseMoex: p.caseMoex ?? "MOEX.dc.html",
       toggleMenu: () => this.setState(s => ({ menuOpen: !s.menuOpen })),
       closeMenu: () => this.setState({ menuOpen: false }),

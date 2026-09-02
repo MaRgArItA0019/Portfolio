@@ -443,7 +443,7 @@
 </div>
 
 </x-dc>
-<script type="text/x-dc" data-dc-script data-props="{&quot;homeUrl&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;Главная.dc.html&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Ссылки&quot;},&quot;tgUrl&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;https://t.me/mn_denisova&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Ссылки&quot;},&quot;cvUrl&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;cv.pdf&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Ссылки&quot;},&quot;caseYandex&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;Яндекс.dc.html&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Другие кейсы&quot;},&quot;caseAvito&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;Авито.dc.html&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Другие кейсы&quot;},&quot;videoStart&quot;:{&quot;editor&quot;:&quot;range&quot;,&quot;default&quot;:1.9,&quot;min&quot;:0,&quot;max&quot;:6,&quot;step&quot;:0.1,&quot;unit&quot;:&quot;с&quot;,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Видео&quot;}}">
+<script type="text/x-dc" data-dc-script data-props="{&quot;homeUrl&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;Главная.dc.html&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Ссылки&quot;},&quot;tgUrl&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;https://t.me/mn_denisova&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Ссылки&quot;},&quot;cvUrl&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;cv.pdf&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Ссылки&quot;},&quot;caseYandex&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;yandex.dc.html&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Другие кейсы&quot;},&quot;caseAvito&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;avito.dc.html&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Другие кейсы&quot;},&quot;videoStart&quot;:{&quot;editor&quot;:&quot;range&quot;,&quot;default&quot;:1.9,&quot;min&quot;:0,&quot;max&quot;:6,&quot;step&quot;:0.1,&quot;unit&quot;:&quot;с&quot;,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Видео&quot;}}">
 class Component extends DCLogic {
   state = { menuOpen: false };
   _tipRef = React.createRef();
@@ -558,8 +558,8 @@ class Component extends DCLogic {
       homeUrl: p.homeUrl ?? "Главная.dc.html",
       tgUrl: p.tgUrl ?? "https://t.me/mn_denisova",
       cvUrl: p.cvUrl ?? "cv.pdf",
-      caseYandex: p.caseYandex ?? "Яндекс.dc.html",
-      caseAvito: p.caseAvito ?? "Авито.dc.html",
+      caseYandex: p.caseYandex ?? "yandex.dc.html",
+      caseAvito: p.caseAvito ?? "avito.dc.html",
       toggleMenu: () => this.setState(s => ({ menuOpen: !s.menuOpen })),
       closeMenu: () => this.setState({ menuOpen: false }),
       copyMail: this._copy,
